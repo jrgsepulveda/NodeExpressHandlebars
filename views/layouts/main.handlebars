@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Tab Title -->
+    <title>Eat da Burger!</title>
+
+    <!-- Tab Image -->
+    <link rel="icon" href="assets/img/burgerimg.png">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Custom CSS Styling -->
+    <link rel="stylesheet" href="assets/css/burger_style.css">
+
+  </head>
+
+  <body>
+
+    <!-- Page Container -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <img src="assets/img/Floatingburger.png" alt="Burger Img">
+        </div>
+      </div>     
+    <div class="jumbotron">
+      <h1>Eat Da Burger!</h1>      
+      <p>Choose a Burger from the list. Then devour it. 
+        <br> 
+          Don't see a burger you like? Enter a Burger of your choice to the list using the submit form below. The list on the left keeps track of what you devoured.</p>    
+        <br>
+      
+
+      <!-- Burger Content from index.handlebars -->
+      {{{body}}}
+
+
+      <br><br>
+
+      <!-- Input New Burgers Form -->
+      <form action="burger/create" method="POST"> 
+        
+        <!-- Text Area Input -->
+        <div>
+          <!-- Empty Div to help center textarea -->
+
+          <!-- Burger Input Box -->
+          <div class="form-group col-md-6 justify-content-center">
+            <label for="new_burger" class="submitFont">Request a new burger!</label>
+            <textarea class="form-control" type="text" columns="6"  id="new_burger required" value="" name ="burger_name"></textarea>
+          </div>
+         
+          <dic class="col-md-6"></div> 
+        </div>
+      
+        <!-- Submit Button -->
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-danger">Make my Burger!</button>
+        </center>
+      </form>
+      <br>
+    </div>
+  </body>
+</html> 

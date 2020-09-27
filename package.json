@@ -1,0 +1,31 @@
+{
+  "name": "nodeexpresshandlebars",
+  "version": "1.0.0",
+  "description": "Express Handlerbars",
+  "main": "server.js",
+  "scripts": {
+    "test": "Test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrgsepulveda/NodeExpressHandlebars.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Handlebars"
+  ],
+  "author": "Jorge Sepulveda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrgsepulveda/NodeExpressHandlebars/issues"
+  },
+  "homepage": "https://github.com/jrgsepulveda/NodeExpressHandlebars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1"
+  }
+}
